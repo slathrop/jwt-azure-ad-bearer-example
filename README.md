@@ -1,5 +1,7 @@
 # JWT Bearer Token From Azure AD Example
 
+Here's how to integrate Azure AD authentication with a Node.js REST API, for example. Specifically, here are the details on verifying an Azure AD-generated JWT Bearer Token.
+
 ## TL;DR
 
 - `git clone` or download the project
