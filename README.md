@@ -5,7 +5,7 @@ Here's how to integrate Azure AD authentication with a Node.js REST API, for exa
 ## TL;DR
 
 - `git clone` or download the project
-- In `Index.js` paste your Bearer token string (Base64, no "Bearer " prefix) into the `token` variable
+- In `index.js` paste your Bearer token string (Base64, no "Bearer " prefix) into the `token` variable
 - Paste your public key X.509 Certificate string (without PEM prefix/suffix) into the `x5tString` variable
 - Run `npm install` and then `node .` from the command-line
 
