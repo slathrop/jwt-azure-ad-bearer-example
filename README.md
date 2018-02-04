@@ -6,7 +6,7 @@ Here's how to integrate Azure AD authentication with a Node.js REST API, for exa
 
 - `git clone` or download the project
 - In `index.js` paste your Bearer token string (Base64, no "Bearer " prefix) into the `token` variable
-- Paste your public key X.509 Certificate string (without PEM prefix/suffix) into the `x5tString` variable
+- Paste your public key X.509 Certificate string (without PEM prefix/suffix) into the `x5cString` variable
 - Run `npm install` and then `node .` from the command-line
 
 If your token is printed out on the console then verification succeeded. Otherwise, an error message will be displayed.
@@ -63,7 +63,7 @@ Let me explain what I mean by "cross-reference". Here's what the public keys JSO
 }
 ```
 
-The main index into the objects in the array is the `"x5t"` value:
+The main index into the objects in the array is the `"x5t"` value (X.509 "Tag"):
 
 - `z44wMdHu8wKsumrbfaK98qxs5YI`,
 - `SSQdhI1cKvhQEDSJxE2gGYs40Q0`, or
@@ -87,8 +87,8 @@ Therefore, to successfully use this `"x5c"` string as a public key argument to a
 
 ```javascript
 var token = '...';
-var x5tString = '...';
-var publicKey = '-----BEGIN CERTIFICATE-----\n' + x5tString + '\n-----END CERTIFICATE-----';
+var x5cString = '...';
+var publicKey = '-----BEGIN CERTIFICATE-----\n' + x5cString + '\n-----END CERTIFICATE-----';
 ...
 
 // Verify
