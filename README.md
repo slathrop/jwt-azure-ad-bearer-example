@@ -75,7 +75,7 @@ Following so far? Great.
 
 To determine which public key your particular Bearer token can be verified with, examine the corresponding `"x5t"` value in the **header** section of **your** Bearer token.
 
-Then, from the matching object in the `keys` array (shown above and as mentioned above, available [here]((https://login.microsoftonline.com/common/discovery/keys))), take the `"x5c"` value to construct your actual public key for token verification purposes.
+Then, from the matching object in the `keys` array (shown above and as mentioned above, available [here](https://login.microsoftonline.com/common/discovery/keys)), take the `"x5c"` value to construct your actual public key for token verification purposes.
 
 ## Construct the Public Key
 
