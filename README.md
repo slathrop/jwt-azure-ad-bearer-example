@@ -63,7 +63,7 @@ Let me explain what I mean by "cross-reference". Here's what the public keys JSO
 }
 ```
 
-The main index into the objects in the array is the `"x5t"` value (X.509 "Tag"):
+The main index into the objects in the array is the `"x5t"` value (X.509 "Thumbnail", see [this spec](https://tools.ietf.org/html/draft-ietf-jose-json-web-signature-31#page-12)):
 
 - `z44wMdHu8wKsumrbfaK98qxs5YI`,
 - `SSQdhI1cKvhQEDSJxE2gGYs40Q0`, or
