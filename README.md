@@ -19,7 +19,7 @@ Let's say that you have an API endpoint using Node.js (Express, LoopBack, Feathe
 
 You'll find some [good examples](https://github.com/matt-ankerson/vue-adal) for using [ADAL](https://github.com/AzureAD/azure-activedirectory-library-for-js) within the browser to get the Microsoft Azure AD-signed Bearer Token.
 
-However, what is perhaps not so clear is how to **verify** the Bearer token on the Node.js side in your API code. This little example and README is a show-and-tell on the "trick" needed to perform the JWT Bearer token verification.
+However, what is perhaps not so clear is how to **verify** the Bearer token on the Node.js side in your API code. This little example and README is a show-and-tell on the "trick" needed to perform the JWT Bearer token verification. Further details beyond the tidbits offered below are available [here](https://tools.ietf.org/html/rfc7517) and [here](https://auth0.com/docs/jwks).
 
 ## Start Down the Rabbit Hole
 
